@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Area Calculate</title>
+</head>
+<body>
+    <div class="container">
+     <div class="row d-flex justify-content-center m-5">
+        <div class="col-md-6">
+            <div class="card shadow">
+
+                <!-- header  -->
+                <div class="card-header bg-dark">
+                    <h1 class="text-center text-white">Area Calculator</h1>
+                </div>
+                <!-- body  -->
+                <div class="card-body">
+                <!-- alert  -->
+
+                    <div class="alertMsg">
+
+                    </div>
+                    <!-- form  -->
+                    <form id="area-converter">
+                        <div class="my-3">
+                            <label class="h5" for="">Select Area</label>
+                            <select class="form-control" name="area">
+                                <option value="">--Select--</option>
+                                <option value="Triangle">Triangle</option>
+                                <option value="Square">Square</option>
+                                <option value="Rectangle">Rectangle</option>
+                                <option value="Circle">Circle</option>
+                            </select>
+                        </div>
+                       
+
+<!-- triangle div-->
+
+                        <div class="Triangle">
+                            <div class="my-3">
+                            <label for="">Base</label>
+                            <input name="Base" class="form-control" type="number">
+                           </div>
+                            <div class="my-3">
+                            <label for="">Height</label>
+                            <input name="Height" class="form-control" type="number">
+                           </div>
+                        </div>
+<!-- Square div-->
+                        <div class="Square">
+                            <div class="my-3">
+                            <label for="">Side</label>
+                            <input name="Side" class="form-control" type="number">
+                           </div>
+                        </div>
+<!-- Rectangle div-->
+                        <div class="Rectangle">
+                            <div class="my-3">
+                            <label for="">Length</label>
+                            <input name="Length" class="form-control" type="number">
+                           </div>
+                            <div class="my-3">
+                            <label for="">Width</label>
+                            <input name="Width" class="form-control" type="number">
+                           </div>
+                        </div>
+ <!-- Circle div -->
+                        <div class="Circle">
+                            <div class="my-3">
+                            <label for="">Radius</label>
+                            <input name="Radius" class="form-control" type="number">
+                           </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="form-control  btn btn-dark" type="submit">Convert Now</button>
+                        </div>
+                    </form>
+                </div>
+<!-- result footer  -->
+                <div class="card-footer">
+                    <div class="m-1 resultMsg d-flex justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="function.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
